@@ -12,6 +12,10 @@ public class Member {
     private String phoneNumber;
     private String email;
     private int branchID;
+    private String SubscriptionID;
+    private String StartDate;  
+    private String EndDate;
+    private String PlanID;
     
 
     public Member() {
@@ -26,12 +30,16 @@ public class Member {
         this.phoneNumber = "";
         this.email = "";
         this.branchID = 0;
+        this.SubscriptionID = "";
+        this.StartDate = "";
+        this.EndDate = "";
+        this.PlanID = "";
     }
     
 
     public Member(int memberID, String nationalID, String firstName, String middleName,
                   String lastName, String dateOfBirth, String gender, String address,
-                  String phoneNumber, String email, int branchID) {
+                  String phoneNumber, String email, int branchID , String SubscriptionID, String StartDate, String EndDate, String PlanID) {
 
         this.memberID = memberID;
         this.nationalID = nationalID;
@@ -44,6 +52,10 @@ public class Member {
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.branchID = branchID;
+        this.SubscriptionID = SubscriptionID;
+        this.StartDate = StartDate;
+        this.EndDate = EndDate;
+        this.PlanID = PlanID;
     }
 
 
@@ -135,4 +147,31 @@ public class Member {
     public int setBranchID() {
         return branchID;
     }
+
+    public String getSubscriptionID() {
+        return SubscriptionID;
+    }
+    public void setSubscriptionID(String subscriptionID) {
+        SubscriptionID = subscriptionID;
+    }
+    public String getStartDate() {
+        return StartDate;
+    }
+    public void setStartDate(String startDate) {
+        StartDate = startDate;
+    }
+    public String getEndDate() {
+        return EndDate;
+    }
+    public void setEndDate(String endDate) {
+        EndDate = endDate;
+    }
+    public String getPlanID() {
+        return PlanID;
+    }
+    public void setPlanID(String planID) {
+        PlanID = planID;
+    }
+    
+
 }

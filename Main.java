@@ -51,14 +51,31 @@ public class Main {
                 System.out.print("\nPhone Number: ");
                 String phoneNumber = input.nextLine();
                 
-                System.out.print("\nEmail: ");
+                System.out.print("Email: ");
                 String email = input.nextLine();
 
-                System.out.print("\nBranch ID: ");
+                System.out.print("Branch ID: ");
                 int branchID = input.nextInt();
+
+                System.out.print("Subscription ID: ");
+                String SubscriptionID = input.nextLine();
+
+                System.out.print("Subscription start Date (yyyy-mm-dd): ");
+                String StartDate = input.nextLine();
+                
+                System.out.print("Subscription end Date (yyyy-mm-dd): ");
+                String EndDate = input.nextLine();
+
+                System.out.print("Plan ID: ");
+                String PlanID = input.nextLine();
+
+
+
+                
+                
                 
                 Member newMember = new Member(memberId, nationalId, firstName, middleName, lastName, 
-                                            dateOfBirth, gender, address, phoneNumber, email, branchID);
+                                            dateOfBirth, gender, address, phoneNumber, email, branchID, SubscriptionID, StartDate, EndDate, PlanID);
 
                 //InsertMember.insert(newMember);
                 }catch(Exception e){
