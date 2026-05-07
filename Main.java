@@ -48,9 +48,12 @@ public class Main {
                 System.out.print("Email: ");
                 String email = input.nextLine();
 
+                System.out.print("Branch ID: ");
+                int branchID = input.nextInt();
+
 
                 Member newMember = new Member(memberId, nationalId, firstName, middleName, lastName, 
-                                            dateOfBirth, gender, address, phoneNumber, email);
+                                            dateOfBirth, gender, address, phoneNumber, email, branchID);
                 
 
                 InsertMember.insert(newMember);
