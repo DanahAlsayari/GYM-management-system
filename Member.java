@@ -132,7 +132,7 @@ public class Member {
         this.email = email;
     }
   
-    public int getBranchID() {
+    public int setBranchID() {
         return branchID;
     }
 }
