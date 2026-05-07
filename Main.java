@@ -77,7 +77,7 @@ public class Main {
                 Member newMember = new Member(memberId, nationalId, firstName, middleName, lastName, 
                                             dateOfBirth, gender, address, phoneNumber, email, branchID, SubscriptionID, StartDate, EndDate, PlanID);
 
-                //InsertMember.insert(newMember);
+                InsertMember.insertMember(newMember);
                 }catch(Exception e){
                     System.out.println("Invalid input. Please try again.");
                     EnterNewRecord=true; 
