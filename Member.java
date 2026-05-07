@@ -14,8 +14,6 @@ public class Member {
     private int branchID;
     
 
-
-    // Default Constructor
     public Member() {
         this.memberID = 0;
         this.nationalID = "";
@@ -31,8 +29,6 @@ public class Member {
     }
     
 
-
-   
     public Member(int memberID, String nationalID, String firstName, String middleName,
                   String lastName, String dateOfBirth, String gender, String address,
                   String phoneNumber, String email, int branchID) {
@@ -96,7 +92,6 @@ public class Member {
     }
 
 
-  
     public void setMemberID(int memberID) {
         this.memberID = memberID;
     }
