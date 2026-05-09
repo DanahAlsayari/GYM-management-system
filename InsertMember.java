@@ -3,7 +3,7 @@ import java.sql.*;
 public class InsertMember {
 
     public static void insertMember(Member member) {
-        String sql = "INSERT INTO MEMBER VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO MEMBER VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             Connection con = DBConnection.getConnection();
@@ -20,10 +20,6 @@ public class InsertMember {
             ps.setString(9, member.getGender());
             ps.setString(10, member.getDateOfBirth());
             ps.setInt(11, member.getBranchID());
-            ps.setString(12, member.getSubscriptionID());
-            ps.setString(13, member.getStartDate());
-            ps.setString(14, member.getEndDate());
-            ps.setString(15, member.getPlanID());
 
             ps.executeUpdate();
             System.out.println("Member inserted successfully.");
