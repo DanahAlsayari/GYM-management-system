@@ -51,16 +51,12 @@ public class Main {
                 System.out.print("\nPhone Number: ");
                 String phoneNumber = input.nextLine();
                 
-                System.out.print("Email: ");
+                System.out.print("\nEmail: ");
                 String email = input.nextLine();
 
-                System.out.print("Branch ID: ");
+                System.out.print("\nBranch ID: ");
                 int branchID = input.nextInt();
 
-
-
-                
-                
                 
                 Member newMember = new Member(memberId, nationalId, firstName, middleName, lastName, 
                                             dateOfBirth, gender, address, phoneNumber, email, branchID);
@@ -70,9 +66,8 @@ public class Main {
                     System.out.println("Invalid input. Please try again.");
                     EnterNewRecord=true; 
                     input.nextLine(); 
-                    continue;}
-                System.out.println("Member added successfully!");
-                
+                    break;}
+  
                 boolean yesNo=true;
                 do{
                 try{

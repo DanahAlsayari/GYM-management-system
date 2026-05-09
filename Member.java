@@ -12,10 +12,7 @@ public class Member {
     private String phoneNumber;
     private String email;
     private int branchID;
-    private String SubscriptionID;
-    private String StartDate;  
-    private String EndDate;
-    private String PlanID;
+
     
 
     public Member() {

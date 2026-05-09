@@ -6,7 +6,7 @@ public class DBConnection {
     public static Connection getConnection() {
 
         Connection con = null; 
-        String url = "jdbc:mariadb://localhost:3306/GYM"; 
+        String url = "jdbc:mariadb://localhost:3306/GYM"; // Database URL
         String user = "root"; 
         String pwd = ""; 
 

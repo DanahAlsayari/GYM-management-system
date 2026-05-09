@@ -17,7 +17,7 @@ public class DisplayMembers{
 				ResultSetMetaData meta=RESULT.getMetaData();// col info
 				int colNum=meta.getColumnCount();//col num for the loop
 		
-				System.out.println("MEMBER RECORDS:");
+				System.out.println("---------------------------\n   MEMBER RECORDS\n---------------------------");
 				boolean rec=false;//is there some data?
 				
 				while(RESULT.next())//moving between rows 
@@ -30,7 +30,7 @@ public class DisplayMembers{
 						System.out.println(colName+" : "+x);
 						
 					}//for
-					System.out.println();
+					System.out.println("---------------------------");
 				}//while 
 				
 				//if table empty
