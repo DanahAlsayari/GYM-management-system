@@ -26,9 +26,17 @@ public class Main {
                 System.out.print("\nMember ID: ");
                 int memberId = input.nextInt();
                 
-                input.nextLine(); 
+                input.nextLine();
+                String nationalId; 
+                int ni=1;
+                do{
+                ni=1;
                 System.out.print("\nNational ID: ");
-                String nationalId = input.nextLine();
+                nationalId = input.nextLine();
+                if(nationalId==""){
+                    System.out.println("National ID cannot be empty");
+                    ni=0;}
+                }while(ni==0);
                 
                 System.out.print("\nFirst Name: ");
                 String firstName = input.nextLine();
@@ -50,12 +58,16 @@ public class Main {
                 
                 System.out.print("\nPhone Number: ");
                 String phoneNumber = input.nextLine();
+                if(phoneNumber.length()!=10)
+                    throw new Exception("Phone number must be 10 digits");
+                    
                 
                 System.out.print("\nEmail: ");
                 String email = input.nextLine();
 
                 System.out.print("\nBranch ID: ");
                 int branchID = input.nextInt();
+                
 
                 
                 Member newMember = new Member(memberId, nationalId, firstName, middleName, lastName, 
