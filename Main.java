@@ -55,12 +55,12 @@ public class Main {
                 
                 System.out.print("\nAddress: ");
                 String address = input.nextLine();
+
                 
+                    
                 System.out.print("\nPhone Number: ");
                 String phoneNumber = input.nextLine();
-                if(phoneNumber.length()!=10)
-                    throw new Exception("Phone number must be 10 digits");
-                    
+              
                 
                 System.out.print("\nEmail: ");
                 String email = input.nextLine();
